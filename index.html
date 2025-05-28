@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mua Workflow n8n</title>
+</head>
+<body>
+  <h2>Form đăng ký mua template</h2>
+  <form action="https://tinbt160704.app.n8n.cloud/webhook/8f6257fd-e029-4696-ab16-1b5a6bb912fa" method="POST">
+    <label>Họ tên:</label><br />
+    <input type="text" name="name" required /><br /><br />
+
+    <label>Email:</label><br />
+    <input type="email" name="email" required /><br /><br />
+
+    <label>Chọn template:</label><br />
+    <select name="template">
+      <option value="gpt-to-sheets">GPT to Sheets</option>
+      <option value="auto-email">Gửi Email Tự Động</option>
+    </select><br /><br />
+
+    <button type="submit">Gửi yêu cầu</button>
+  </form>
+</body>
+</html>
